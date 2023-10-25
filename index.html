@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What color is that</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+    <h1>WHAT <em>COLOR</em> IS THAT ?</h1>
+    <p>You are looking for a <em>precise</em> color on your favorite picture ? Don't worry i got you enjoy this litlle tool of mine :)</p>
+    <p>Just <em>choose a file</em> or <em>drag and drop</em> your image on the button and <em>hover</em> on the color you want to know the hex code</p>
+    <form action="">
+        <label for="image-input" class="custom-file-upload">Choose your image</label>
+        <input type="file" id="image-input" class="input-file">
+    </form>
+    <canvas id="canvas"></canvas>
+    <div id="hovered-color"></div>
+    <div id="selected-color"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

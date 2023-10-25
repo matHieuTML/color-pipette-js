@@ -1,0 +1,77 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.photoLoad:hover{
+    cursor: crosshair;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: #2C2F33;
+    color: rgb(225, 217, 217);
+    display: grid;
+    place-items: center;
+}
+h1{
+    font-size: 2.9rem;
+    font-weight: 800 !important ;
+    margin-top: 20px;
+}
+p{
+    color: #51555a;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+em{
+    /* surpimmer le style */
+    font-style: normal;
+    animation: changeColor 3s infinite alternate;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #51555a 0.5px solid;
+    border-radius: 7px;
+    padding-top: 3px;
+}
+form:hover{
+    cursor: pointer !important;
+    box-shadow: rgba(128, 128, 128, 0.25) 0px 54px 55px, rgba(128, 128, 128, 0.12) 0px -12px 30px, rgba(128, 128, 128, 0.12) 0px 4px 6px, rgba(128, 128, 128, 0.17) 0px 12px 13px, rgba(128, 128, 128, 0.09) 0px -3px 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-file-upload {
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.input-file {
+    height: 100px;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+canvas{
+    margin-top: 20px;
+}
+
+@keyframes changeColor {
+    0%{
+        color: rgb(232, 59, 148);
+    }
+    50%{
+        color: rgb(209, 19, 242);
+    }
+    100%{
+        color: rgb(78, 30, 237);
+    }
+}
